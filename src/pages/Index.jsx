@@ -21,7 +21,7 @@ const Index = () => {
   const generateMessage = () => {
     const name = "[NAME]"; // This could be made dynamic in the future
     const externId = "{extern_id}"; // This could be made dynamic in the future
-    const newMessage = `${greeting.replace("[NAME]", name)} ${identifier} ${message} ${link.replace("{extern_id}", externId)} ${optout}`;
+    const newMessage = `${greeting.replace("[NAME]", name)} ${identifier} ${message} ${link} ${optout}`;
     setGeneratedMessage(newMessage);
   };
 
