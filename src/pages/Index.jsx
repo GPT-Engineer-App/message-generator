@@ -20,7 +20,6 @@ const Index = () => {
 
   const generateMessage = () => {
     const name = "[NAME]"; // This could be made dynamic in the future
-    const externId = "{extern_id}"; // This could be made dynamic in the future
     const newMessage = `${greeting.replace("[NAME]", name)} ${identifier} ${message} ${link} ${optout}`;
     setGeneratedMessage(newMessage);
   };
@@ -81,9 +80,9 @@ const Index = () => {
             <SelectValue placeholder="Select a link" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="https://lucer.co/SE/1/PSD/?p={extern_id}">https://lucer.co/SE/1/PSD/?p={extern_id}</SelectItem>
-            <SelectItem value="https://lucer.us/SE/1/PSD/?p={extern_id}">https://lucer.us/SE/1/PSD/?p={extern_id}</SelectItem>
-            <SelectItem value="https://1luce.com/SE/1/PSD/?p={extern_id}">https://1luce.com/SE/1/PSD/?p={extern_id}</SelectItem>
+            <SelectItem value="https://lucer.co/SE/1/PSD/?p=EXTERN_ID">https://lucer.co/SE/1/PSD/?p=EXTERN_ID</SelectItem>
+            <SelectItem value="https://lucer.us/SE/1/PSD/?p=EXTERN_ID">https://lucer.us/SE/1/PSD/?p=EXTERN_ID</SelectItem>
+            <SelectItem value="https://1luce.com/SE/1/PSD/?p=EXTERN_ID">https://1luce.com/SE/1/PSD/?p=EXTERN_ID</SelectItem>
           </SelectContent>
         </Select>
 
